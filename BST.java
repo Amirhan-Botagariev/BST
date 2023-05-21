@@ -22,6 +22,10 @@ public class BST <K extends Comparable<K>, V>{
 
     private int size = 0;
 
+    public int getSize() {
+        return size;
+    }
+
     public void put(K key, V val){
         this.root = addIntoNode(root, key, val);
         size++;
