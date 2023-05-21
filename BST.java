@@ -11,6 +11,13 @@ public class BST <K extends Comparable<K>, V>{
             this.key = key;
             this.val = val;
         }
+
+        @Override
+        public String toString() {
+            return  "{key= " + key +
+                    ", val= " + val +
+                    '}';
+        }
     }
 
     private int size = 0;
